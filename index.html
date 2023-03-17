@@ -8,49 +8,23 @@
     <link rel="stylesheet" href="style.css" />
 
     <style>
-      body {
-        margin: 0;
-      }
-
-      /* a:link {
-        font-size: 35px;
-        text-decoration: none;
-        color: green;
-      }
-      a:visited {
+      h1::first-letter {
+        font-size: 70px;
+        font-style: italic;
         color: goldenrod;
       }
-      a:hover {
-        color: red;
+      h1::before {
+        content: "This is a ";
+        color: green;
       }
-      a:active {
-        color: skyblue;
-      } */
-
-      /* a {
-        font-size: 35px;
-        color: orange;
-      } */
-
-      .dropdown-content a {
-        display: none;
-      }
-      .dropdown:hover .dropdown-content a {
-        display: block;
+      h1::after {
+        content: " of the Website";
+        font-size: 50px;
+        color: green;
       }
     </style>
   </head>
   <body>
-    <!-- <a href="https://google.com">Click Here</a> -->
-
-    <div class="dropdown">
-      <a href="#">Items</a>
-      <div class="dropdown-content">
-        <a href="#">Item 1</a>
-        <a href="#">Item 2</a>
-        <a href="#">Item 3</a>
-        <a href="#">Item 4</a>
-      </div>
-    </div>
+    <h1>Heading</h1>
   </body>
 </html>
