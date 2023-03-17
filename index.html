@@ -4,35 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Box Model</title>
+    <title>Pseudo Classes & Pseudo Elements</title>
+    <link rel="stylesheet" href="style.css" />
+
     <style>
       body {
         margin: 0;
       }
-      h1 {
-        /* border-width: 5px;
-        border-color: #f00;
-        border-style: solid; */
-        border: 5px red solid;
-        /* padding-top: 30px;
-        padding-right: 50px;
-        padding-bottom: 70px;
-        padding-left: 90px; */
-        /* padding: 30px 50px 70px 90px; */
-        /* padding: 100px; */
-        /* margin-top:50px;
-        margin-right: 100px;
-        margin-bottom: 150px;
-        margin-left: 200px; */
-        padding: 100px;
-        margin: 100px;
-        width: 300px;
-        height: 300px;
-        box-sizing: content-box;
+
+      /* a:link {
+        font-size: 35px;
+        text-decoration: none;
+        color: green;
+      }
+      a:visited {
+        color: goldenrod;
+      }
+      a:hover {
+        color: red;
+      }
+      a:active {
+        color: skyblue;
+      } */
+
+      /* a {
+        font-size: 35px;
+        color: orange;
+      } */
+
+      .dropdown-content a {
+        display: none;
+      }
+      .dropdown:hover .dropdown-content a {
+        display: block;
       }
     </style>
   </head>
   <body>
-    <h1>Box Model</h1>
+    <!-- <a href="https://google.com">Click Here</a> -->
+
+    <div class="dropdown">
+      <a href="#">Items</a>
+      <div class="dropdown-content">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+      </div>
+    </div>
   </body>
 </html>
