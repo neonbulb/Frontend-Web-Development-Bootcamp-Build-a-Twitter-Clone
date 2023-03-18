@@ -4,50 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Measurement Units</title>
+    <title>Positions</title>
     <link rel="stylesheet" href="style.css" />
 
     <style>
       body {
         margin: 0;
       }
-      h1 {
-        font-size: 200%;
-        margin: 0;
-      }
-      section {
-        font-size: 30px;
+      .container {
         background-color: orangered;
-        color: white;
-        /* width: 70%; */
-        height: 100vh;
-        width: 50vw;
+        width: 700px;
+        height: 600px;
       }
-      div {
+      .box {
+        width: 350px;
+        height: 100px;
+        font-size: 25px;
+        color: white;
+      }
+      .box-1 {
         background-color: green;
-        /* width: 50%; */
-        width: 50%;
+      }
+      .box-2 {
+        background-color: royalblue;
+        position: relative;
+        top: 50px;
+        width: 500px;
+        height: 300px;
+      }
+      .box-3 {
+        background-color: grey;
       }
     </style>
   </head>
   <body>
-    <section>
-      <h1>Heading</h1>
-      <div>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
-          asperiores ipsa explicabo a praesentium, maiores quo sequi eum atque
-          fugiat ipsum dolor, cum quaerat, doloribus fuga inventore animi.
-          Libero, deserunt!
-        </p>
-      </div>
-    </section>
-
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore esse
-      aliquid labore ratione voluptas voluptatibus nostrum provident expedita
-      voluptatum? Inventore pariatur magnam quos doloremque ab repudiandae fuga
-      repellendus placeat obcaecati.
-    </p>
+    <div class="container">
+      <div class="box box-1">Box 1</div>
+      <div class="box box-2">Box 2</div>
+      <div class="box box-3">Box 3</div>
+    </div>
   </body>
 </html>
