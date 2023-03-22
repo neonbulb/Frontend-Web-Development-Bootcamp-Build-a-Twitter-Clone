@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transitions</title>
+    <title>Transforms</title>
     <link rel="stylesheet" href="style.css" />
 
     <style>
@@ -12,21 +12,30 @@
         width: 200px;
         height: 200px;
         background-color: orangered;
-
-        transition-property: width, background-color;
-        transition-duration: 1s, 5s;
-        transition-delay: 0s, 1s;
-        transition-timing-function: linear;
-        /* transition: width 1s linear, background-color 5s; */
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        padding-top: 55px;
+        box-sizing: border-box;
+        transition-property: all;
+        transition-duration: 1s;
+        margin: 350px auto;
       }
 
       .box:hover {
-        width: 400px;
-        background-color: green;
+        /* transform: translateX(30px) translateY(50px); */
+        /* transform: rotate(360deg); */
+
+        /* transform: scale(50%, 200%); */
+        /* transform: scale(0.5, 2); */
+
+        /* transform: skewX(22deg); */
+
+        transform: rotateY(90deg);
       }
     </style>
   </head>
   <body>
-    <div class="box"></div>
+    <div class="box">Box</div>
   </body>
 </html>
