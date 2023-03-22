@@ -4,40 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shadows</title>
+    <title>Transitions</title>
     <link rel="stylesheet" href="style.css" />
 
     <style>
-      .heading {
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
-        font-size: 55px;
-        text-align: center;
-        color: #555;
-        text-shadow: 3px 3px 10px #888;
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: orangered;
+
+        transition-property: width, background-color;
+        transition-duration: 1s, 5s;
+        transition-delay: 0s, 1s;
+        transition-timing-function: linear;
+        /* transition: width 1s linear, background-color 5s; */
       }
-      .card {
+
+      .box:hover {
         width: 400px;
-        margin: 100px auto;
-        background-color: #ccc;
-        padding: 5px;
-        text-align: center;
-      }
-      .card:hover {
-        box-shadow: 5px 5px 10px #777;
-      }
-      .card img {
-        width: 100%;
+        background-color: green;
       }
     </style>
   </head>
-
   <body>
-    <h1 class="heading">This is a heading with shadow</h1>
-
-    <div class="card">
-      <img src="html.png" alt="HTML logo" />
-      <h2>My Class</h2>
-    </div>
+    <div class="box"></div>
   </body>
 </html>
