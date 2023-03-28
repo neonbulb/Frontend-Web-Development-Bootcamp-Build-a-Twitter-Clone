@@ -1,0 +1,61 @@
+/* common styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  font-size: 0.625rem;
+}
+
+body {
+  background-color: #f0f8fd;
+}
+/* end of common styles */
+/* main page */
+.main-page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr auto; /* Tutorial used min-content instead of auto */
+}
+
+/* left */
+.left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: #1aa1f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-content div {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 4rem;
+}
+.left-content i {
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+.left-content-heading {
+  font-size: 2rem;
+}
+/* end of left */
+/* right */
+.right {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+}
+
+/* end of right */
+
+/* .main-page-footer {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  justify-content: center;
+} */
+
+/* end of main page */
